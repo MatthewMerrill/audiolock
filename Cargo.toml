@@ -1,0 +1,26 @@
+[package]
+name = "audio-lock"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+com-policy-config = "0.6.0"
+image = "0.25"
+tray-icon = "0.19"
+windows-core = "0.61.2"
+
+[dependencies.windows]
+version = "0.61"
+features = [
+    "Win32_Foundation",
+    "Win32_Media_Audio",
+    "Win32_UI_Shell_PropertiesSystem",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_Variant",
+    "Devices_Custom",
+]
+
+[dev-dependencies.windows]
+version = "0.61"
+features = ["Win32_Devices_FunctionDiscovery"]

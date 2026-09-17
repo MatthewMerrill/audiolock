@@ -1,0 +1,5 @@
+{
+  "name": "Rust Windows Cross Build",
+  "image": "mcr.microsoft.com/devcontainers/rust:1",
+  "postCreateCommand": "cargo install cargo-xwin && rustup target add x86_64-pc-windows-msvc"
+}
